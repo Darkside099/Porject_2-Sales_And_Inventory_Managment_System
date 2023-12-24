@@ -24,7 +24,6 @@ class Server:
         
     def add(self,pname,qty,pcost) :
         date = datetime.datetime.now()
-        cursor=conn.cursor()
         self.cursor.execute("create table if not exists item(item_id int auto_increment primary key ,item_name varchar(30),item_cost int,item_quantity int ,date_time datetime )")
         self.cursor.execute("alter table item auto_increment= 1001")
         self.cursor.execute("insert into item (item_name,item_cost,item_quantity,date_time) values(%s,%s,%s,%s)",(pname,pcost,qty,date))
