@@ -9,7 +9,7 @@ class Server:
         self.conn = None
         self.cursor = None
     
-    def connection(self, uname, password):
+    def connection(self,uname, password):
         userName = uname.lower()
         password = password.lower()
         try:
