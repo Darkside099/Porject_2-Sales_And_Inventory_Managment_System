@@ -9,7 +9,7 @@ def login():
     root.iconbitmap(r'D:\VS_CODE\Git\Porject_2-Sales_And_Inventory_Managment_System\Other_Resources\icon.ico')
     def check():
         username,password=uname_entry.get(),password_entry.get()
-        if Server.connection(username,password) == True:
+        if Server().connection(username,password) == True:
             login_status.config(text='Login Successfuly',fg='blue')
             root.destroy()
         else:
@@ -35,5 +35,4 @@ def login():
     login_status.pack()
 
     root.mainloop()
-
-Server.connection('root','2005')
+login()
