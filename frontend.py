@@ -7,7 +7,7 @@ global win
 win = tk.Tk()
 win.geometry('1000x500')
 win.title('SIMS')
-win.iconbitmap(r'D:\VS_CODE\Git\Porject_2-Sales_And_Inventory_Managment_System\Other_Resources\icon.ico')
+win.iconbitmap(r'/home/darkstar099/Desktop/Darkside/VS Code/Git/Porject_2-Sales_And_Inventory_Managment_System/Other_Resources/icon.png')
 
 class Application:
     def exit_program():
