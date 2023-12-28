@@ -6,7 +6,7 @@ def login():
     root = Tk()
     root.geometry('1000x500')
     root.title('SIMS')
-    root.iconbitmap(r'D:\VS_CODE\Git\Porject_2-Sales_And_Inventory_Managment_System\Other_Resources\icon.ico')
+    # root.iconbitmap(r'D:\VS_CODE\Git\Porject_2-Sales_And_Inventory_Managment_System\Other_Resources\icon.ico')
     def check():
         username,password=uname_entry.get(),password_entry.get()
         if Server().connection(username,password) == True:
