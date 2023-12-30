@@ -11,7 +11,6 @@ class Server:
     
     def connection(self,uname, password):
         userName = uname.lower()
-        password = password.lower()
         try:
             self.conn = mysql.connector.connect(host="localhost",user=userName,passwd=password,auth_plugin="mysql_native_password")
             self.cursor = self.conn.cursor()
